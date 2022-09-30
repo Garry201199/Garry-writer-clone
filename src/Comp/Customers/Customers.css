@@ -1,0 +1,90 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.customerSwiper .swiper-pagination-bullet {
+  display: none;
+}
+.customerSwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgb(0, 0, 0);
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.customerSwiper .swiper-slide img {
+  display: block;
+  place-self: center;
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.customerSwiper .swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.customerSwiper .swiper-button-next,
+.customerSwiper .swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur;
+  padding: 40px;
+  border-radius: 100%;
+  background-color: #2b2b2b;
+  color: #ffff !important;
+  fill: black !important;
+  stroke: rgb(125, 35, 35) !important;
+}
+.customerSwiper .swiper-button-next:hover,
+.customerSwiper .swiper-button-prev:hover {
+  background-color: #424242;
+}
+@media screen and (max-width: 480px) {
+  .customerSwiper .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .customerSwiper .swiper-button-next,
+  .customerSwiper .swiper-button-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur;
+    padding: 20px;
+    border-radius: 100%;
+    background-color: #d3d3d3;
+    color: #ffff !important;
+    fill: black !important;
+    stroke: rgb(125, 35, 35) !important;
+  }
+  .customerSwiper .swiper-button-next::after,
+  .customerSwiper .swiper-button-prev::after {
+    display: none;
+  }
+  .customerSwiper .swiper-button-prev {
+    background-image: url("../../Assets/arrow-left-solid.svg") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .customerSwiper .swiper-button-next {
+    background-repeat: no-repeat;
+    background-image: url("../../Assets/arrow-right-solid.svg") !important;
+  }
+}

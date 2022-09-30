@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import HeroContainer from './Comp/HeroContainer';
+import Clients from './Comp/Clients/Clients';
+import Features1 from './Comp/Features1';
+import Customers from './Comp/Customers/Customers';
+import Security from './Comp/Security';
+import Footer from './Comp/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=' text-black  bg-[#F7F4FF] max-h-screen selection:text-slate-900 selection:bg-sky-300/20 '>
+     <HeroContainer/>
+      <Clients/>
+      <Features1/>
+      <Customers/>
+      <Security/>
+      <Footer/>
     </div>
   );
 }
